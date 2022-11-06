@@ -10,7 +10,8 @@ contract Overflow {
         // value += 1;
         // to get back the original unchecked functionality, you wrap the calculation in unchecked {**calculation**}
         unchecked {value = value + 1;}
-        // a potential application of this would be saving gas when you are sure that the value wont pass the upper or lower limits of the data type
+        /** a potential application of this would be saving gas when you are sure that the value
+            wont pass the upper or lower limits of the data type **/
     }
 }
 
